@@ -1,0 +1,18 @@
+# Python caches and local runtime files
+__pycache__/
+*.py[cod]
+*.tmp
+
+# Model weights and rolling checkpoints are intentionally kept off GitHub.
+checkpoints/
+*.pt
+*.pth
+*.ckpt
+*.bin
+*.safetensors
+
+# Pickled model artifacts are excluded, except for the small experiment
+# hyperparameter file explicitly tracked below.
+*.pkl
+!experiment1/best_params_VarCoNet_AICHA.pkl
+
