@@ -15,4 +15,4 @@ checkpoints/
 # hyperparameter file explicitly tracked below.
 *.pkl
 !experiment1/best_params_VarCoNet_AICHA.pkl
-
+!experiment2/best_params_VarCoNet_AICHA.pkl

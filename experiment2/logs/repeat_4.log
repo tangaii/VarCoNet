@@ -1,0 +1,19 @@
+REPEAT_START repeat=4 device=cuda:0 tasks=11
+TASK_SKIP repeat=4 scope=internal_fold fold=0 reason=PASS_SHARD
+TASK_SKIP repeat=4 scope=internal_fold fold=1 reason=PASS_SHARD
+TASK_SKIP repeat=4 scope=internal_fold fold=2 reason=PASS_SHARD
+TASK_SKIP repeat=4 scope=internal_fold fold=3 reason=PASS_SHARD
+TASK_SKIP repeat=4 scope=internal_fold fold=4 reason=PASS_SHARD
+TASK_SKIP repeat=4 scope=internal_fold fold=5 reason=PASS_SHARD
+TASK_SKIP repeat=4 scope=internal_fold fold=6 reason=PASS_SHARD
+TASK_SKIP repeat=4 scope=internal_fold fold=7 reason=PASS_SHARD
+TASK_SKIP repeat=4 scope=internal_fold fold=8 reason=PASS_SHARD
+TASK_SKIP repeat=4 scope=internal_fold fold=9 reason=PASS_SHARD
+TASK_START repeat=4 scope=caltech_external fold=external seed=200004 device=cuda:0 shared_encoder=Y
+RESUME repeat=4 scope=caltech_external fold=external from_epoch=51 latest_epoch=50
+TASK_TRAINING_DONE repeat=4 scope=caltech_external fold=external base_epoch=17 dyn_epoch=17 base_val_bce=0.635282 dyn_val_bce=0.634405
+TASK_DONE repeat=4 scope=caltech fold=external method=baseline selected_encoder_epoch=17 test_auc=0.678363 test_bce=0.641691 elapsed_min=4.3
+TASK_DONE repeat=4 scope=abide2 fold=external method=baseline selected_encoder_epoch=17 test_auc=0.748246 test_bce=0.594107 elapsed_min=4.3
+TASK_DONE repeat=4 scope=caltech fold=external method=stable_dynamic_residual selected_encoder_epoch=17 test_auc=0.652047 test_bce=0.648628 elapsed_min=4.3
+TASK_DONE repeat=4 scope=abide2 fold=external method=stable_dynamic_residual selected_encoder_epoch=17 test_auc=0.743224 test_bce=0.598960 elapsed_min=4.3
+REPEAT_DONE repeat=4 status=PASS rows=26
