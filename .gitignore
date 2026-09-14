@@ -16,3 +16,7 @@ checkpoints/
 *.pkl
 !experiment1/best_params_VarCoNet_AICHA.pkl
 !experiment2/best_params_VarCoNet_AICHA.pkl
+!experiment2b/best_params_VarCoNet_AICHA.pkl
+
+# Experiment 2B's local dataset cache is intentionally kept off GitHub.
+experiment2b/dataset_cache/
