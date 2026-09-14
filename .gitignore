@@ -14,6 +14,10 @@ checkpoints/
 # Pickled model artifacts are excluded, except for the small experiment
 # hyperparameter file explicitly tracked below.
 *.pkl
+!best_params_VarCoNet_AAL.pkl
+!best_params_VarCoNet_AICHA.pkl
+!trials_VarCoNet_AAL.pkl
+!trials_VarCoNet_AICHA.pkl
 !experiment1/best_params_VarCoNet_AICHA.pkl
 !experiment2/best_params_VarCoNet_AICHA.pkl
 !experiment2b/best_params_VarCoNet_AICHA.pkl
