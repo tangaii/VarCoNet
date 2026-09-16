@@ -28,3 +28,10 @@ checkpoints/
 experiment2b/dataset_cache/
 # Experiment 3's local dataset cache is intentionally kept off GitHub.
 experiment3/dataset_cache/
+
+# Experiment 1V's local ABIDE cache and runtime artifacts are intentionally
+# kept off GitHub; compact reports and result tables remain tracked.
+experiment1v/dataset_cache/
+experiment1v/work/
+experiment1v/logs/*.pid
+!experiment1v/best_params_VarCoNet_AICHA.pkl

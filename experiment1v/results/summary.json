@@ -1,0 +1,115 @@
+{
+  "experiment": "Experiment 1V",
+  "status": "PASS",
+  "question1_h1": "SUPPORTED",
+  "question2_h2": "STRONG_SUPPORTED",
+  "h1_tests": {
+    "H1_A_external_pearson_auc": true,
+    "H1_B_internal_pearson_loso": true,
+    "H1_C_pearson_topedge_replication": true
+  },
+  "h2_tests": {
+    "H2_A_identity": true,
+    "H2_B_geometry": true,
+    "H2_C_external_auc": false,
+    "H2_D_trajectory": true
+  },
+  "abide2_original_n": 727,
+  "abide2_evaluable_n": 727,
+  "abide2_excluded_n": 0,
+  "caltech_n": 37,
+  "internal_unique_n": 882,
+  "abide2_site_metadata": {
+    "abide1_phenotype": "/data/adodas/VarCoNet-V2-main/dataset/ABIDEI/Phenotypic_V1_0b_preprocessed1.csv",
+    "abide1_phenotype_sha256": "009f01a89697113e5375ded4fbcff4c85e89a4daa6d13e63c21ae5d57dda0865",
+    "abide2_phenotype": "/data/adodas/VarCoNet-V2-main/xiaolunwen/experiment1v/metadata/ABIDEII_Composite_Phenotypic.csv",
+    "abide2_phenotype_sha256": "537e541114884f63a2e736ba4d223a816dd013f701e56fb223ebe42e219e06f6",
+    "abide1_site_mapping_complete": true,
+    "abide2_site_mapping_complete": true,
+    "abide1_site_count": 20,
+    "abide2_site_count": 14,
+    "label_convention": "0=ASD, 1=HC (repository class labels recoded after official DX_GROUP audit)"
+  },
+  "fingerprint_primary_n": 589,
+  "h2d_tradeoff_repeats": 10,
+  "no_suppression_statement": "",
+  "selected_epochs": [
+    7,
+    38,
+    38,
+    50,
+    47,
+    27,
+    44,
+    39,
+    23,
+    2
+  ],
+  "task_counts": {
+    "internal_folds": 100,
+    "external_repeats": 10
+  },
+  "source_hashes_before": {
+    "model_scripts": "fa3af48175c37f0d03eda9863fa9ef1e5735e474cf34fb5f6751bb44733b34b0",
+    "xiaolunwen/experiment1": "db87b36cdc5af09afb23701ed2591b6b93b51b7af35872c05fab61703f9e9f9b",
+    "xiaolunwen/experiment1b": "a8c0d0fc0a1f2e04a69748004d242449948b34f4553417317ba944bed76b1ee3",
+    "xiaolunwen/experiment1c": "62a986869622e00964431085008eb85b09c27e149ce86fab02bc6a5182f37197",
+    "xiaolunwen/experiment1d": "346cb265e6edfcb7a599e9fe81c7df27fc38233f69cb9f6f50184c4eaddba0b4",
+    "xiaolunwen/experiment2": "d26afee55cd10762fff9e60a417585150f8a876c62f3328487bd076c1a87481f",
+    "xiaolunwen/experiment2b": "c5fce570f23f5e984b410c7010b35a0bafd561ae3f2fa78ea1884397978d98b6",
+    "xiaolunwen/experiment3": "c074fd9cf4d8816d51a86a1c56bb1006bb03aa1ddc4135539c39e59594e20342",
+    "utils.py": "aa1cd33e6f362dac51f9b71b252769da9b411676543f00a8d339ec7623dc0bfb",
+    "ASD_classification_ABIDEI.py": "046b83d6caa8732d3fb389505f76573d58361b6c921b21719c0ce97f5c062665",
+    "ASD_classification_ABIDEII.py": "d0d01a33139bcb97131250952ce2f8c4c6b72ae3efb19ad2d3d39727a07b5c10"
+  },
+  "source_hashes_smoke": {
+    "model_scripts": "fa3af48175c37f0d03eda9863fa9ef1e5735e474cf34fb5f6751bb44733b34b0",
+    "xiaolunwen/experiment1": "db87b36cdc5af09afb23701ed2591b6b93b51b7af35872c05fab61703f9e9f9b",
+    "xiaolunwen/experiment1b": "a8c0d0fc0a1f2e04a69748004d242449948b34f4553417317ba944bed76b1ee3",
+    "xiaolunwen/experiment1c": "62a986869622e00964431085008eb85b09c27e149ce86fab02bc6a5182f37197",
+    "xiaolunwen/experiment1d": "346cb265e6edfcb7a599e9fe81c7df27fc38233f69cb9f6f50184c4eaddba0b4",
+    "xiaolunwen/experiment2": "d26afee55cd10762fff9e60a417585150f8a876c62f3328487bd076c1a87481f",
+    "xiaolunwen/experiment2b": "c5fce570f23f5e984b410c7010b35a0bafd561ae3f2fa78ea1884397978d98b6",
+    "xiaolunwen/experiment3": "c074fd9cf4d8816d51a86a1c56bb1006bb03aa1ddc4135539c39e59594e20342",
+    "utils.py": "aa1cd33e6f362dac51f9b71b252769da9b411676543f00a8d339ec7623dc0bfb",
+    "ASD_classification_ABIDEI.py": "046b83d6caa8732d3fb389505f76573d58361b6c921b21719c0ce97f5c062665",
+    "ASD_classification_ABIDEII.py": "d0d01a33139bcb97131250952ce2f8c4c6b72ae3efb19ad2d3d39727a07b5c10"
+  },
+  "paired_audit_groups": 120,
+  "worker_errors": [],
+  "temporary_states_cleaned": true,
+  "protocol": {
+    "window_sizes_audited": [
+      80,
+      200,
+      320
+    ],
+    "stable_window_policy": "one complete 320-row padded scan, matching Experiment1D actual extraction",
+    "view_length": 80,
+    "fixed_epochs": [
+      0,
+      1,
+      5,
+      10,
+      20,
+      30,
+      40,
+      50
+    ],
+    "label_convention": "0=ASD,1=HC"
+  },
+  "source_hashes_after": {
+    "model_scripts": "fa3af48175c37f0d03eda9863fa9ef1e5735e474cf34fb5f6751bb44733b34b0",
+    "xiaolunwen/experiment1": "db87b36cdc5af09afb23701ed2591b6b93b51b7af35872c05fab61703f9e9f9b",
+    "xiaolunwen/experiment1b": "a8c0d0fc0a1f2e04a69748004d242449948b34f4553417317ba944bed76b1ee3",
+    "xiaolunwen/experiment1c": "62a986869622e00964431085008eb85b09c27e149ce86fab02bc6a5182f37197",
+    "xiaolunwen/experiment1d": "346cb265e6edfcb7a599e9fe81c7df27fc38233f69cb9f6f50184c4eaddba0b4",
+    "xiaolunwen/experiment2": "d26afee55cd10762fff9e60a417585150f8a876c62f3328487bd076c1a87481f",
+    "xiaolunwen/experiment2b": "c5fce570f23f5e984b410c7010b35a0bafd561ae3f2fa78ea1884397978d98b6",
+    "xiaolunwen/experiment3": "c074fd9cf4d8816d51a86a1c56bb1006bb03aa1ddc4135539c39e59594e20342",
+    "utils.py": "aa1cd33e6f362dac51f9b71b252769da9b411676543f00a8d339ec7623dc0bfb",
+    "ASD_classification_ABIDEI.py": "046b83d6caa8732d3fb389505f76573d58361b6c921b21719c0ce97f5c062665",
+    "ASD_classification_ABIDEII.py": "d0d01a33139bcb97131250952ce2f8c4c6b72ae3efb19ad2d3d39727a07b5c10"
+  },
+  "source_hashes_unchanged": true
+}

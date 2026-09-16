@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/data/adodas/VarCoNet-V2-main/xiaolunwen/experiment1v/run_experiment1v.py", line 1622, in <module>
+    main()
+  File "/data/adodas/VarCoNet-V2-main/xiaolunwen/experiment1v/run_experiment1v.py", line 1613, in main
+    aggregate_results(); return
+    ^^^^^^^^^^^^^^^^^^^
+  File "/data/adodas/VarCoNet-V2-main/xiaolunwen/experiment1v/run_experiment1v.py", line 1506, in aggregate_results
+    _write_report(RESULTS_DIR / "REPORT.md", summary, statistics, trajectory_table, fp_p, fp_v, geom_p_gap, geom_v_gap, ext_auc, loso_boot, edge_stats, paired_auc)
+  File "/data/adodas/VarCoNet-V2-main/xiaolunwen/experiment1v/run_experiment1v.py", line 1552, in _write_report
+    f"| ABIDE-II fingerprint TOP1 | {_fmt(fp_p['top1'])} | {_fmt(fp_v['top1'])} | {_fmt(fp_delta['observed'])} | {_fmt(fp_delta['ci_low'])}–{_fmt(fp_delta['ci_high'])} |",
+                                                                                        ~~~~~~~~^^^^^^^^^^^^
+KeyError: 'observed'
